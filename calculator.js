@@ -13,7 +13,6 @@ const result = document.getElementById('result');
 const calc = document.getElementsByClassName('calculation');
 
 const showResult = (value = "0") => {
-  result.value = "";
   result.textContent = value;
 };
 
