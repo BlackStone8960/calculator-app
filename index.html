@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculation-wrapper">
+    <div class="result-wrapper"><div id="result"></div></div>
+    <div class="button-wrapper">
+      <div class="button clear" onclick="allClear()"><div class="character">AC</div></div>
+      <div class="button clear" onclick="reverse()"><div class="character">&#43;/&#8722;</div></div>
+      <div class="button" onclick="parcent()"><div class="character">%</div></div>
+      <div class="button calculation" onclick="calculation('/'); calcClicked(this)"><div class="character">&#247;</div></div>
+
+      <div class="button number" onclick="pressNumber('7')"><div class="character">7</div></div>
+      <div class="button number" onclick="pressNumber('8')"><div class="character">8</div></div>
+      <div class="button number" onclick="pressNumber('9')"><div class="character">9</div></div>
+      <div class="button calculation" onclick="calculation('*'); calcClicked(this)"><div class="character">&#215;</div></div>
+
+      <div class="button number" onclick="pressNumber('4')"><div class="character">4</div></div>
+      <div class="button number" onclick="pressNumber('5')"><div class="character">5</div></div>
+      <div class="button number" onclick="pressNumber('6')"><div class="character">6</div></div>
+      <div class="button calculation" onclick="calculation('-'); calcClicked(this)"><div class="character">&#8722;</div></div>
+
+      <div class="button number" onclick="pressNumber('1')"><div class="character">1</div></div>
+      <div class="button number" onclick="pressNumber('2')"><div class="character">2</div></div>
+      <div class="button number" onclick="pressNumber('3')"><div class="character">3</div></div>
+      <div class="button calculation" onclick="calculation('+'); calcClicked(this)"><div class="character">&#43;</div></div>
+
+      <div class="button number" onclick="pressNumber('0')"><div class="character">0</div></div>
+      <div class="button number" onclick="pressNumber('00')"><div class="character">00</div></div>
+      <div class="button number" onclick="pressNumber('.')"><div class="character">.</div></div>
+      <div class="button number" onclick="execute()"><div class="character">&#61;</div></div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
